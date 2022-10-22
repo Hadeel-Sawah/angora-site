@@ -41,7 +41,7 @@
     $('.icon-cet').css({'opacity':'1','transitionDuration': '3s'})
    }
    else{
-    $('.icon-cet').css({'opacity':'0','transitionDuration':'3s'})
+    $('.icon-cet').css({'opacity':'0','transitionDuration':'1.5s'})
    }
    if($(window).scrollTop()> carouselOffset){
     $('.navbar').css({'backgroundColor':'#232323','transitionDuration': '1s'})
