@@ -82,7 +82,6 @@ font-size: 80px;
     content: "";
     width: 60px;
     height: 2px;
-    /* background-color: rgb(56, 55, 55); */
     background-color: var(--main-color);
     position: absolute;
     bottom: -15px;
@@ -199,7 +198,7 @@ input {
     border-radius: 70%;
     background-color:var(--main-color) !important;
     z-index: 9999;
-    display: none;
+    opacity: 0;
 }
 .icon-cet i{
     font-size: 25px;

@@ -38,13 +38,13 @@
 
  $(window).scroll(function(){
    if ($(window).scrollTop()> aboutOffset){
-    $(".icon-cet").fadeIn(2000);
+    $('.icon-cet').css({'opacity':'1','transitionDuration': '3s'})
    }
    else{
-    $(".icon-cet").fadeOut(1500);
+    $('.icon-cet').css({'opacity':'0','transitionDuration':'3s'})
    }
    if($(window).scrollTop()> carouselOffset){
-    $('.navbar').css({'backgroundColor':'#232323', 'transitionDuration': '1s'})
+    $('.navbar').css({'backgroundColor':'#232323','transitionDuration': '1s'})
    }
    else{
     $('.navbar').css({'backgroundColor':'transparent', 'transitionDuration': '1s'})
@@ -57,18 +57,15 @@
  $(".nav-link").click(function(){
     let currentHref = $(this).attr('href');
     let currentSet = $(currentHref).offset().top;
-    $("body,html").animate({scrollTop:currentSet},2000)
-   })
+    $("body,html").animate({scrollTop:currentSet},2000);
+   });
   var swiper = new Swiper(".review-slider", {
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: {
-        delay: 80000,
-        disableOnInteraction: false,
-      } ,
+    autoplay: true,
       breakpoints: {
       0: {
           slidesPerView: 1,
